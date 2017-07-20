@@ -204,7 +204,7 @@ function loadArticles() {
 
   // What part of CRUD is being enacted/managed by this particular piece of code?
   // ANSWER === create CRUD
-  // if exists read...
+  // if exists read..
   client.query('SELECT COUNT(*) FROM articles')
   .then(function(result) {
     // REVIEW: result.rows is an array of objects that Postgres returns as a response to a query.
